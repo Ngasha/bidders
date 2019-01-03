@@ -45,6 +45,31 @@
     transform: translate(-50%, -50%);
 }
 
+.body-wrapper-2{
+    height: 50vh;
+    width: 100%;
+}
+.slideshow-back{
+    height: 50vh;
+    background: linear-gradient(#34b975, transparent 90%),
+                linear-gradient(0deg,rgb(219, 189, 189), transparent), #eeabb2 url("bid1.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+}
+.slideshow-back p{
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFFFFF;
+   
+    /*top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
 /*display lap styles*/
 .display-lap{
     height: 65vh;
