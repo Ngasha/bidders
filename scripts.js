@@ -1,6 +1,8 @@
-const priceMe = document.getElementById(`price-me`);
-const addToCart = document.getElementById(`add-to-cart`);
+var modal = document.getElementById('id01');
 
-addToCart.addEventListener(`click`, function(){
-    priceMe.style.backgroundColor = `lawngreen`;
-});
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
