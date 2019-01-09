@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Auction</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+            <div class="menu-container">
+                   
+                   <div class="link-1 link"><a href="index.html">Home</a></div>
+                   <div class="link-2 link"><a href="auction.html">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.html">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.html" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.html" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+            </div>
+
+              <!--form elements-->
+            <div id="myForm" class="form-content">
+                <!--form content-->
+                <form class="formal" action="/action-page.php">
+                    <div class="imgContainer">
+                        <span class="close"> &times; </span>
+                        <img src="avatar.jpg" alt="avatar" class="avatar">
+                    </div>
+                    <div class="container-1">
+                        <label for="userName"><b>Username</b></label><br/>
+                        <input type="text" placeholder="Enter username..." name="userName" required><br/>
+
+                        <label for="psw"><b>Password</b></label><br/>
+                        <input type="text" placeholder="password..." name="psw" required><br/>
+
+                        <button type="submit" class="log-btn">Login</button><br/>
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember">Remember me
+                        </label>
+                    </div>
+                    <div class="container-1">
+                        <button type="reset" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password</a></span>
+                        <span class="psw-1"><a href="#">Sign up</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <footer class="main-footer">
+                <div class="footer-inner">
+                    <span>&copy;2019 Peter Patel school project, <br/>&copy;Copyright.</span>
+                </div>
+            </footer>
+        <script src="scripts.js"></script>
+    </body>
+</html>

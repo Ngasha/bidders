@@ -25,23 +25,5 @@ span.onclick = function(){
      
  }
 
- //form
- var form = document.getElementById("myForm");
 
- var linkLog = document.getElementById("loginTo");
- // Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
-
- linkLog.onclick = function(){
-     form.style.display = "block";
- }
- span.onclick = function(){
-     form.style.display = "none"
- }
- window.onclick = function(){
-    if(event.target == form){
-       form.style.display = "none";
-    }
-    
-}
-
+ 
