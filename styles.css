@@ -126,7 +126,7 @@ body{
 
 /*style the lower content*/
 .lower-container{
-    height: 90vh;
+    height: 40vh;
     background-color: rgba(189, 184, 184, 0.856);
     flex: 1;
 }
