@@ -1,8 +1,7 @@
 //bid click interact
 var modal = document.getElementById("myModal");
 //GET Button that opens modal
-var btn = document.getElementById('addTo');
-
+var btn = document.querySelectorAll('addTo');
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName('close')[0];
