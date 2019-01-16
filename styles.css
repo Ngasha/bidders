@@ -54,6 +54,7 @@ body{
 .body-wrapper-2{
     height: 50vh;
     width: 100%;
+   
 }
 .slideshow-back{
     height: 50vh;
@@ -63,7 +64,9 @@ body{
     background-attachment: fixed;
     background-position: center;
     display: flex;
+  
 }
+
 .slideshow-back p{
     text-align: center;
     margin: auto;
@@ -80,7 +83,9 @@ body{
     justify-content: center;
 }
 .items {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 20px 0;
 }
 .item {
@@ -121,14 +126,14 @@ body{
 
 /*style the lower content*/
 .lower-container{
-    height: 50vh;
-    background-color: rgb(238, 232, 232);
+    height: 90vh;
+    background-color: rgba(189, 184, 184, 0.856);
     flex: 1;
 }
 .lower-wrap{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     /*flex-direction: row;*/
 }
