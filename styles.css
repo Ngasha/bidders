@@ -126,7 +126,18 @@ body{
 
 /*style the lower content*/
 .lower-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     height: 40vh;
+    background-color: rgba(189, 184, 184, 0.856);
+    flex: 1;
+}
+.lower-container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
     background-color: rgba(189, 184, 184, 0.856);
     flex: 1;
 }
@@ -214,7 +225,7 @@ span.psw-1{
 }
    /* Set a style for all buttons */
    button{
-    background-color: rgb(228, 99, 13);
+    background-color: rgb(13, 70, 228);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -223,7 +234,7 @@ span.psw-1{
     width: 100%;
   }
    button.log-btn {
-    background-color: rgb(228, 99, 13);
+    background-color: rgb(13, 70, 228);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
