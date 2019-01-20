@@ -302,3 +302,18 @@ input[type=text], input[type=password] {
     text-decoration: none;
     cursor: pointer;
   }
+
+  /*------------media queries-------------*/
+  /*--------screen defination--------------*/
+  @media screen and (max-width: 600px){
+      .menu-container{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+      }
+      .link{
+          justify-content: center;
+          margin: auto;
+      }
+  }

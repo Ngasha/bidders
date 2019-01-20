@@ -1,20 +1,22 @@
 //bid click interact
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
 //GET Button that opens modal
-var btn = document.querySelectorAll('addTo');
+const btn = document.querySelectorAll('addTo');
+
+// When the user clicks on the button, open the modal 
+$('.addTo').click(function(){
+  modal.style.display = "block";
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName('close')[0];
 
-// When the user clicks on the button, open the modal 
-btn.onclick = function(){
-    modal.style.display = "block";
-}
 
 //user click on the (X)
-span.onclick = function(){
-    modal.style.display = "none";
-}
+$('#myModal').click(function(){
+  modal.style.display = "none";
+});
+
 
  //user clicks on the outside
  window.onclick = function(){
