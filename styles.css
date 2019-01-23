@@ -329,6 +329,7 @@ input[type=text], input[type=password] {
             display: flex;
             flex-wrap: wrap;
             height: 100%;
+            background-color: #f5f5f1;
         }
 
         .menu-container{
