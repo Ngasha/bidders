@@ -146,7 +146,12 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+    background-color: #FFF;
+    height: 40vh;
     /*flex-direction: row;*/
+}
+.cont i{
+    color: brown;
 }
 .cont{
     flex: 1 200px;
@@ -232,6 +237,7 @@ span.psw-1{
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 16px;
   }
    button.log-btn {
     background-color: rgb(13, 70, 228);
@@ -341,4 +347,11 @@ input[type=text], input[type=password] {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
+  }
+
+  .item{
+      height: 300px;
+      width: 240px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px #4d504d;
   }
