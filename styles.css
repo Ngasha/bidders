@@ -77,7 +77,8 @@ body{
 }
 /*display lap styles*/
 .display-lap{
-    height: 65vh;
+    min-height: 65vh;
+    max-height: 100%;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -137,7 +138,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
     background-color: rgba(189, 184, 184, 0.856);
     flex: 1;
 }
@@ -162,10 +164,7 @@ body{
     padding: 10px;
    
 }
-.cont i{
-    color: aliceblue;
 
-}
 .cont p{
     padding: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -349,7 +348,7 @@ input[type=text], input[type=password] {
       flex-wrap: wrap;
       height: 100%;
   }
-  
+
   .formal{
       display: flex;
       flex-wrap: wrap;
