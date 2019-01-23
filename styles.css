@@ -344,6 +344,12 @@ input[type=text], input[type=password] {
       height: 100%;
   }
 
+  .lower-wrap{
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+  }
+  
   .formal{
       display: flex;
       flex-wrap: wrap;
