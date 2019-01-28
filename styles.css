@@ -126,6 +126,7 @@ body{
     border-radius: 25px;
 }
 
+
 /*style the lower content*/
 .lower-container{
     display: flex;
@@ -384,6 +385,9 @@ input[type=text], input[type=password] {
     text-decoration: none;
     cursor: pointer;
   }
+  .but-space{
+      display: none;
+  }
 
   /*------------media queries-------------*/
   /*--------screen defination--------------
@@ -438,12 +442,33 @@ input[type=text], input[type=password] {
       min-width: inherit;
       width: fit-content;
   }
+  .but-space{
+      display: block;
+      height: 12vh;
+      width: 100%;
+      margin: 10px;
 
+  }
+  .show-me{
+      background-color: #34b975;
+      color: #FFF;
+      border-radius: 3px;
+      height: 56px;
+      width: 74px;
+      display: flex;
+      flex-wrap: wrap;
+     text-align: center;
+     margin: auto;
+     border-style: none;
+  }
+  #myhide{
+      display: none;
+  }
   .item{
       height: 300px;
       width: 240px;
       border-radius: 10px;
-      box-shadow: 10px 10px 5px #4d504d;
+      box-shadow: 10px 10px 5px aquamarine;
   } 
   .open-nav{
       display: block;

@@ -82,3 +82,15 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
+
+// show more
+function toggleShow(){
+  var x = document.getElementById("myhide");
+  if(x.style.display==="none"){
+    x.style.display = "block";
+  }
+  else{
+    x.style.display = "none";
+  }
+}
+
