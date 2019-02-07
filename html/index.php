@@ -4,34 +4,37 @@
      <title>Auction</title>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="../css/styles.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <?php
+
+        ?>
         <span class="open-nav" onclick="openNav()"><i class="fa fa-bars" style="font-size:20px;"></i></span>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closeebtn" onclick="closeNav()">&times;</a>
 
             <div class="overlay-content">
                    
-                   <div class="link-1 link"><a href="index.html">Home</a></div>
-                   <div class="link-2 link"><a href="auction.html">Auction</a></div>
-                   <div class="link-3 link"><a href="contact.html">Contact</a></li></div>
-                   <div class="link-4 link"><a href="cart.html" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="login.html" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
             </div>
         </div>
 
         <div class="menu-container">
                    
-                <div class="link-1 link"><a href="index.html">Home</a></div>
-                <div class="link-2 link"><a href="auction.html">Auction</a></div>
-                <div class="link-3 link"><a href="contact.html">Contact</a></li></div>
-                <div class="link-4 link"><a href="cart.html" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                <div class="link-5 link"><a href="login.html" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
-         </div>
+                   <div class="link-1 link"><a href="index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+            </div>
             <div class="body-wrapper">
                 <div class="slideshow-background back-ground">
                     <h1>Please place your Bid</h1>
@@ -41,26 +44,26 @@
                 <div class="items">
                     <!--single item-->
                         <div class="item">
-                            <img src="acer2.jpg" alt="acer laptop"/>
+                            <img src="../img/acer2.jpg" alt="acer laptop"/>
                             <h2 id="acer-lap">Acer Laptop</h2>
                             <p>Price: <em>ksh.66,800</em></p>
                             <button class="addTo" type="button">BID</button>
                         </div>
 
                         <div class="item">
-                            <img src="dell1.jpg" alt="acer laptop"/>
+                            <img src="../img/dell1.jpg" alt="acer laptop"/>
                             <h2>Dell Desktop</h2>
                             <p>Price: <em>ksh.44,800</em></p>
                             <button class="addTo" type="button">BID</button>
                         </div>
                     <div class="item">
-                        <img src="hp1.jpg" alt="acer laptop"/>
+                        <img src="../img/hp1.jpg" alt="acer laptop"/>
                         <h2>Hp Laptop</h2>
                         <p>Price: <em>ksh.47,800</em></p>
                         <button class="addTo" type="button">BID</button>
                     </div>
                     <div class="item">
-                        <img src="mac3.jpg" alt="mac laptop"/>
+                        <img src="../img/mac3.jpg" alt="mac laptop"/>
                         <h2>Macbook Air</h2>
                         <p>Price: <em>ksh.62,800</em></p>
                         <button class="addTo" type="button">BID</button>
@@ -115,6 +118,6 @@
                 </div>
             </footer>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
-        <script src="scripts.js"></script>
+        <script src="../js/scripts.js"></script>
     </body>
 </html>

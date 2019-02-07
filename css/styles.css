@@ -35,7 +35,7 @@ body{
 .slideshow-background{
     height: 50vh;
     background: linear-gradient(#34b975, transparent 90%),
-                linear-gradient(0deg,rgb(219, 189, 189), transparent), #eeabb2 url("bid1.png") no-repeat;
+                linear-gradient(0deg,rgb(219, 189, 189), transparent), #eeabb2 url("../img/bid1.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -60,7 +60,7 @@ body{
 .slideshow-back{
     height: 50vh;
     background: linear-gradient(#34b975, transparent 90%),
-                linear-gradient(0deg,rgb(219, 189, 189), transparent), #eeabb2 url("bid1.png") no-repeat;
+                linear-gradient(0deg,rgb(219, 189, 189), transparent), #eeabb2 url("../img/bid1.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -88,7 +88,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .item {
     background-color: #fff;
@@ -140,7 +140,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    min-height: 100vh;
+    min-height: 79vh;
     max-height: 100%;
     background-color: rgba(189, 184, 184, 0.856);
     flex: 1;
@@ -259,7 +259,7 @@ body{
 /*form styles*/
 .form-content {
     background: linear-gradient(#224797, transparent 90%),
-    linear-gradient(0deg,rgb(204, 186, 20), transparent), #8b8888 url(lap2.jpg) no-repeat;
+    linear-gradient(0deg,rgb(204, 186, 20), transparent), #8b8888 url("../img/lap2.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -400,7 +400,7 @@ input[type=text], input[type=password] {
   @media only screen and (max-width: 600px){
     .slideshow-background{
         background-attachment: inherit;
-        background: url(mac3.jpg);
+        background: url("../img/mac3.jpg");
         background: linear-gradient(rgb(57, 185, 218), transparent 90%), linear-gradient(0deg,rgb(219, 189, 189), transparent), #EEAC5A url(mac3.jpg) no-repeat;
         background-size: cover;
         }
