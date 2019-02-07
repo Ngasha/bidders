@@ -118,7 +118,6 @@
                     <p class="deadline"></p>
                         <button class="addTo" type="button">BID</button>
                     </div>
-
                </div>
             </div>
             
