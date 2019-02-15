@@ -257,9 +257,9 @@ body{
     font-size: 60px;
   }
 /*form styles*/
-.form-content {
-    background: linear-gradient(#224797, transparent 90%),
-    linear-gradient(0deg,rgb(204, 186, 20), transparent), #8b8888 url("../img/lap2.jpg") no-repeat;
+.form-content, .container-reg {
+    background: linear-gradient(#030a1b5d, transparent 90%),
+    linear-gradient(0deg,rgb(0, 0, 16), transparent), #080808c4 url("../img/lap2.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -297,13 +297,13 @@ img.avatar{
     padding: 16px;
 }
 
-span.psw {
-    float: right;
+span.psw a {
     padding-top: 16px;
+    color: aqua;
   }
-span.psw-1{
-    float: left;
+span.psw-1 a {
     padding-top: 16px;
+    color: aqua;
 }
    /* Set a style for all buttons */
    button{
@@ -338,7 +338,11 @@ span.psw-1{
       
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+h2.head-reg{
+    text-align: center;
+    padding: 4px;
+}
+input[type=text], input[type=email], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -498,3 +502,27 @@ input[type=text], input[type=password] {
     }
   
   }   */
+
+  .sectioni{
+      display: block;
+      margin: auto;
+      height: fill-available;
+      padding-top: 22px;
+  }
+  p.thank-reg{
+      color: lawngreen;
+      text-align: center;
+      margin: auto;
+      font-size: 25px;
+  }
+
+  .error{
+      width: 92%;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #a94442;
+      color: #a94442;
+      background: #f2dede;
+      border-radius: 5px;
+      text-align: left;
+  }

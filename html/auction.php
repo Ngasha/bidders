@@ -19,21 +19,21 @@
     
                 <div class="overlay-content">
                        
-                       <div class="link-1 link"><a href="index.php">Home</a></div>
-                       <div class="link-2 link"><a href="auction.php">Auction</a></div>
-                       <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
-                       <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                       <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="index.php">Home</a></div>
+                   <div class="link-2 link"><a href="../auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="../contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="../cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="../login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
                 </div>
             </div>
     
             <div class="menu-container">
                    
-                   <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+            <div class="link-1 link"><a href="index.php">Home</a></div>
+                   <div class="link-2 link"><a href="../auctionee/html/auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="../auctionee/html/contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="../auctionee/html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="../auctionee/html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
             </div>
             <div class="body-wrapper">
                 <div class="slideshow-background back-ground">
@@ -132,7 +132,7 @@
             </div>
             <footer class="main-footer">
                 <div class="footer-inner">
-                    <span>&copy;2019 Peter Patel school project, <br/>&copy;Copyright.</span>
+                    <span>&copy;<?php echo date('Y');?> Peter Patel school project, <br/>&copy;Copyright.</span>
                 </div>
             </footer>
             
