@@ -18,22 +18,21 @@
                 <a href="javascript:void(0)" class="closeebtn" onclick="closeNav()">&times;</a>
     
                 <div class="overlay-content">
-                       
-                   <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="../auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="../contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="../cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="../login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="../index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
                 </div>
             </div>
     
             <div class="menu-container">
                    
-            <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="../auctionee/html/auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="../auctionee/html/contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="../auctionee/html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="../auctionee/html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="../index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
             </div>
             <div class="body-wrapper">
                 <div class="slideshow-background back-ground">
@@ -82,8 +81,46 @@
                         <img src="../img/lap1.jpg" alt="acer laptop"/>
                         <h2>Hp Laptop</h2>
                         <p>Price: <em>ksh.47,800</em></p>
-                        <p class="bids-count">+24 bids</p>
-                        <p class="deadline"></p>
+                        <p class="bids-count">+26 bids</p>
+                        <p id="demo"></p>
+                        
+                        <script>
+                                // Set the date we're counting down tovar
+                                var abc = "2019";
+                                countDownDate = new Date("February" + "20" +", " + "2019" + " 12:20:00").getTime();
+
+                                // Update the count down every 1 second
+                                myFunction();
+                                function myFunction() {
+                                var x = setInterval(function() {
+                                    
+                                    // Get todays date and time
+                                    var now = new Date().getTime();
+                                    
+                                    // Find the distance between now an the count down date
+                                    var distance = countDownDate - now;
+                                    
+                                    // Time calculations for days, hours, minutes and seconds
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                    
+                                    // Output the result in an element with id="demo"
+                                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                                    + minutes + "m " + seconds + "s ";
+                                    
+                                    // If the count down is over, write some text 
+                                    if (distance < 1) {
+                                        clearInterval(x);
+                                        countDownDate = new Date("Feb" + "20" +", " + "2019" + " 12:20:00").getTime();
+                                        myFunction();
+                                        
+                                        document.getElementById("demo").innerHTML = "EXPIRED";
+                                    }
+                                }, 1000);
+                                }
+                        </script>
                         <button class="addTo" type="button">BID</button>
                     </div>
                     <div class="item">
@@ -91,7 +128,38 @@
                         <h2>Toshiba Laptop</h2>
                         <p>Price: <em>ksh.44,000</em></p>
                         <p class="bids-count">+24 bids</p>
-                    <p class="deadline"></p>
+                    <p id="deadline"></p>
+                    <script>
+                                           // Set the date we're counting down to
+                                            var countDownDate = new Date("Feb 20, 2019 12:37:21").getTime();
+
+                                            // Update the count down every 1 second
+                                            var x = setInterval(function() {
+
+                                              // Get todays date and time
+                                              var now = new Date().getTime();
+
+                                              // Find the distance between now and the count down date
+                                              var distance = countDownDate - now;
+
+                                              // Time calculations for days, hours, minutes and seconds
+                                              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                              // Display the result in the element with 
+                                              document.getElementById("deadline").innerHTML = days + "d " + hours + "h "
+                                              + minutes + "m " + seconds + "s ";
+
+                                              // If the count down is finished, write some text 
+                                              if (distance < 0) {
+                                                clearInterval(x);
+                                                document.getElementById("deadline").innerHTML = "EXPIRED";
+                                              }
+                                            }, 1000);
+
+                        </script>
                         <button class="addTo" type="button">BID</button>
                     </div>
                     <div class="item">
@@ -115,7 +183,7 @@
                         <h2>dell Laptop</h2>
                         <p>Price: <em>ksh.67,100</em></p>
                         <p class="bids-count">+24 bids</p>
-                    <p class="deadline"></p>
+                        <p class="deadline"></p>
                         <button class="addTo" type="button">BID</button>
                     </div>
                </div>
@@ -127,12 +195,12 @@
                     <span class="close"> &times; </span>
                     <p>Enter bid amount</p>
                     <input type="text" placeholder="Set bid.." name="uname" required>
-                    <button class="place">Place Bid</button>
+                    <button type="submit" name="submit" class="place">Place Bid</button>
                 </div>
             </div>
             <footer class="main-footer">
                 <div class="footer-inner">
-                    <span>&copy;<?php echo date('Y');?> Peter Patel school project, <br/>&copy;Copyright.</span>
+                    <span>&copy;<?php echo date('Y');?> Peter Ng'ang'a school project, <br/>&copy;Copyright.</span>
                 </div>
             </footer>
             

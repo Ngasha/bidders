@@ -31,10 +31,10 @@
         <div class="menu-container">
                    
                   <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="./html/auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="./html/contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="./html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="./html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-2 link"><a href="../auctionee/html/auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="../auctionee/html/contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="../auctionee/html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="../auctionee/html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
             </div>
             <div class="body-wrapper">
                 <div class="slideshow-background back-ground">
@@ -104,21 +104,31 @@
                     </div>
                 </div>    
             </div>
+
+            <!--<div class="cart-info">
+            
+
+
+
+            </div>-->
+
+
             <div id="myModal" class="modal">
                 <!--modal content-->
                 <div class="modal-content">
                     <span class="close"> &times; </span>
                     <p>Enter bid amount</p>
                     <input type="text" placeholder="Set bid.." name="uname" required>
-                    <button class="place">Place Bid</button>
+                    <button type="submit" name="submit" class="place">Place Bid</button>
                 </div>
             </div>
             <footer class="main-footer">
                 <div class="footer-inner">
-                    <span>&copy;<?php echo date('Y');?> Peter Patel school project, <br/>&copy;Copyright.</span>
+                    <span>&copy;<?php echo date('Y');?> Peter Ng'ang'a school project, <br/>&copy;Copyright.</span>
                 </div>
             </footer>
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
         <script src="./js/scripts.js"></script>
+        <script src="./js/cart.js"></script>
     </body>
 </html>

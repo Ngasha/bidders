@@ -1,4 +1,7 @@
-<?php include('server.php');?>
+<?php
+//session_start();
+include('../server.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,28 +20,29 @@
     
                 <div class="overlay-content">
                     
-                <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="../auctionee/html/auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="../auctionee/html/contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="../auctionee/html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="../auctionee/html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="../index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
                 </div>
             </div>
     
             <div class="menu-container">
                 
-               <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="../auctionee/html/auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="../auctionee/html/contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="../auctionee/html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="../auctionee/html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="../index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
             </div>
 
         <div class="container-reg">
             <form class="formal" action="registration.php" method="POST">
             <h2 class="head-reg">Register</h2>
+            
                 <!--validation errors display-->
-            <?php include('errors.php');?>
+           
                     <!-- <div class="imgContainer">
                             <img src="../img/patel.jpg" alt="avatar" class="avatar">
 
@@ -47,10 +51,10 @@
                         <div class="container-1">
         
                             <label for="userName"><b>Username</b></label><br/>
-                            <input type="text" placeholder="Enter username..." name="username" value="<?php echo $username;?>"><br/>
+                            <input type="text" placeholder="Enter username..." name="username" value="<?php echo $username?>"><br/>
 
                             <label for="email"><b>Email</b></label><br/>
-                            <input type="email" placeholder="email..." name="email" value="<?php echo $email;?>"><br/>
+                            <input type="email" placeholder="email..." name="email" value="<?php echo $email?>"required><br/>
 
                             <label for="psw"><b>Password</b></label><br/>
                             <input type="password" placeholder="password..." name="password_1"><br/>

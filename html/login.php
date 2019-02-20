@@ -20,27 +20,28 @@
     
                 <div class="overlay-content">
                        
-                <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="../auctionee/html/auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="../auctionee/html/contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="../auctionee/html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="../auctionee/html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="../index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
                 </div>
             </div>
     
             <div class="menu-container">
                    
-            <div class="link-1 link"><a href="index.php">Home</a></div>
-                   <div class="link-2 link"><a href="../auctionee/html/auction.php">Auction</a></div>
-                   <div class="link-3 link"><a href="../auctionee/html/contact.php">Contact</a></li></div>
-                   <div class="link-4 link"><a href="../auctionee/html/cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
-                   <div class="link-5 link"><a href="../auctionee/html/login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
+                   <div class="link-1 link"><a href="../index.php">Home</a></div>
+                   <div class="link-2 link"><a href="auction.php">Auction</a></div>
+                   <div class="link-3 link"><a href="contact.php">Contact</a></li></div>
+                   <div class="link-4 link"><a href="cart.php" id="cart"><i class="large material-icons">add_shopping_cart</i>Cart</a></div>
+                   <div class="link-5 link"><a href="login.php" id="mybutton"><i class="large material-icons">person</i></a></div><!--trigger to open-->
             </div>
 
               <!--form elements-->
             <div id="myForm" class="form-content">
                 <!--form content-->
                 <form class="formal" method="POST" action="index.php">
+                    <?php include('../errors.php');?>
                     <div class="imgContainer">
                         <img src="../img/patel.jpg" alt="avatar" class="avatar">
                     </div>
@@ -49,9 +50,9 @@
                         <input type="text" placeholder="Enter username..." name="username" required><br/>
 
                         <label for="psw"><b>Password</b></label><br/>
-                        <input type="password" placeholder="password..." name="psw" required><br/>
+                        <input type="password" placeholder="password..." name="password" required><br/>
 
-                        <button type="submit" name="log_in" class="log-btn">Login</button><br/>
+                        <button type="submit" name="login" class="log-btn">Login</button><br/>
                         <label>
                         <input type="checkbox" checked="checked" name="remember">Remember me
                         </label>

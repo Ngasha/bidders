@@ -49,7 +49,7 @@ $section= null;
 
 <footer class="main-footer">
                 <div class="footer-inner">
-                    <span>&copy;<?php echo date('Y');?> Peter Patel school project, <br/>&copy;Copyright.</span>
+                    <span>&copy;<?php echo date('Y');?> Peter Ng'ang'a school project, <br/>&copy;Copyright.</span>
                 </div>
             </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    

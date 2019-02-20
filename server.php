@@ -1,5 +1,7 @@
 <?php
-session_start();
+//session_start();
+//include('C:/xampp/htdocs/auctionee/html/login.php');
+//include('login_query.php');
 
 $username = "";
 $email = "";
@@ -39,7 +41,7 @@ if(isset($_POST['register'])){
                 mysqli_query($db, $sql);
                 $_SESSION['username']= $username;
                 $_SESSION['success']= 'you are logged in';
-                header('location : index.php');//redirect to home page
+                header('location : login.php');//redirect to home page
     }
 }
 ?>
